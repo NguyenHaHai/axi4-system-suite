@@ -1,0 +1,74 @@
+# AXI_COPY Project .gitignore
+
+# Build artifacts
+build/
+work/
+obj/
+*.log
+*.wlf
+*.vcd
+*.fsdb
+*.shm
+
+# Simulator files
+modelsim.ini
+transcript
+vsim.wlf
+vish_stacktrace.vstf
+sim/modelsim/wlf*
+sim/modelsim/*.txt
+
+# Synthesis outputs
+*.qdb
+*.qpg
+*.qtl
+*.edf
+*.vqm
+*.rpt
+netlist/
+sim/quartus/db/
+sim/quartus/output_files/
+sim/quartus/incremental_db/
+
+# FPGA outputs
+*.bit
+*.sof
+*.pof
+*.rbf
+*.rpd
+
+# Backup files
+*.bak
+*~
+*.swp
+*.swo
+
+# IDE files
+.vscode/
+.idea/
+*.mpf
+*.cr.mti
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.orig
+
+# Documentation builds
+docs/_build/
+docs/.doctrees/
+
+# Test results
+test_results/
+coverage_html/
+
+# Keep important files
+!README.md
+!LICENSE
+!.gitignore
+
