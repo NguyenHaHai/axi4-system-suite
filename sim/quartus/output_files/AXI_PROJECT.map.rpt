@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AXI_PROJECT
-Tue Nov 11 09:39:50 2025
+Tue Nov 11 11:36:06 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -133,15 +133,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 11 09:39:50 2025           ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov 11 11:36:06 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; AXI_PROJECT                                     ;
 ; Top-level Entity Name              ; alu_master_system                               ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 671                                             ;
-;     Total combinational functions  ; 624                                             ;
-;     Dedicated logic registers      ; 310                                             ;
-; Total registers                    ; 310                                             ;
+; Total logic elements               ; 673                                             ;
+;     Total combinational functions  ; 626                                             ;
+;     Dedicated logic registers      ; 311                                             ;
+; Total registers                    ; 311                                             ;
 ; Total pins                         ; 8                                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 8,192                                           ;
@@ -297,7 +297,7 @@ applicable agreement for further details.
 ; altram.inc                                                                           ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                                                            ;         ;
 ; altdpram.inc                                                                         ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                                                          ;         ;
 ; db/altsyncram_uqp1.tdf                                                               ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Nguyen Ha Hai/axi4-system-suite/sim/quartus/db/altsyncram_uqp1.tdf                                             ;         ;
-; db/AXI_PROJECT.ram0_Simple_Memory_Slave_c3357c4f.hdl.mif                             ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/Nguyen Ha Hai/axi4-system-suite/sim/quartus/db/AXI_PROJECT.ram0_Simple_Memory_Slave_c3357c4f.hdl.mif           ;         ;
+; db/axi_project.ram0_simple_memory_slave_c3357c4f.hdl.mif                             ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/Nguyen Ha Hai/axi4-system-suite/sim/quartus/db/axi_project.ram0_simple_memory_slave_c3357c4f.hdl.mif           ;         ;
 +--------------------------------------------------------------------------------------+-----------------+-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -306,28 +306,28 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 671   ;
+; Estimated Total logic elements              ; 673   ;
 ;                                             ;       ;
-; Total combinational functions               ; 624   ;
+; Total combinational functions               ; 626   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 245   ;
-;     -- 3 input functions                    ; 194   ;
-;     -- <=2 input functions                  ; 185   ;
+;     -- 4 input functions                    ; 249   ;
+;     -- 3 input functions                    ; 191   ;
+;     -- <=2 input functions                  ; 186   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 587   ;
+;     -- normal mode                          ; 589   ;
 ;     -- arithmetic mode                      ; 37    ;
 ;                                             ;       ;
-; Total registers                             ; 310   ;
-;     -- Dedicated logic registers            ; 310   ;
+; Total registers                             ; 311   ;
+;     -- Dedicated logic registers            ; 311   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 8     ;
 ; Total memory bits                           ; 8192  ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; ACLK  ;
-; Maximum fan-out                             ; 342   ;
-; Total fan-out                               ; 3446  ;
+; Maximum fan-out                             ; 343   ;
+; Total fan-out                               ; 3463  ;
 ; Average fan-out                             ; 3.54  ;
 +---------------------------------------------+-------+
 
@@ -337,12 +337,12 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                  ; Library Name ;
 +-------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |alu_master_system                                                ; 624 (1)           ; 310 (0)      ; 8192        ; 0            ; 0       ; 0         ; 8    ; 0            ; |alu_master_system                                                                                                                                                   ; work         ;
-;    |AXI_Interconnect_Full:u_interconnect|                         ; 86 (0)            ; 24 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect                                                                                                              ; work         ;
-;       |AR_Channel_Controller_Top:u_AR_Channel_Controller_Top|     ; 23 (0)            ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|AR_Channel_Controller_Top:u_AR_Channel_Controller_Top                                                        ; work         ;
+; |alu_master_system                                                ; 626 (1)           ; 311 (0)      ; 8192        ; 0            ; 0       ; 0         ; 8    ; 0            ; |alu_master_system                                                                                                                                                   ; work         ;
+;    |AXI_Interconnect_Full:u_interconnect|                         ; 85 (0)            ; 24 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect                                                                                                              ; work         ;
+;       |AR_Channel_Controller_Top:u_AR_Channel_Controller_Top|     ; 22 (0)            ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|AR_Channel_Controller_Top:u_AR_Channel_Controller_Top                                                        ; work         ;
 ;          |AW_HandShake_Checker:u_AR_HandShake_Checker|            ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|AR_Channel_Controller_Top:u_AR_Channel_Controller_Top|AW_HandShake_Checker:u_AR_HandShake_Checker            ; work         ;
 ;          |Mux_2x1:araddr_mux|                                     ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|AR_Channel_Controller_Top:u_AR_Channel_Controller_Top|Mux_2x1:araddr_mux                                     ; work         ;
-;          |Mux_2x1:arvalid_mux|                                    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|AR_Channel_Controller_Top:u_AR_Channel_Controller_Top|Mux_2x1:arvalid_mux                                    ; work         ;
+;          |Mux_2x1:arvalid_mux|                                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|AR_Channel_Controller_Top:u_AR_Channel_Controller_Top|Mux_2x1:arvalid_mux                                    ; work         ;
 ;          |Read_Addr_Channel_Dec:u_Read_Addr_Channel_Dec|          ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|AR_Channel_Controller_Top:u_AR_Channel_Controller_Top|Read_Addr_Channel_Dec:u_Read_Addr_Channel_Dec          ; work         ;
 ;          |Read_Arbiter:u_Read_Arbiter|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|AR_Channel_Controller_Top:u_AR_Channel_Controller_Top|Read_Arbiter:u_Read_Arbiter                            ; work         ;
 ;       |AW_Channel_Controller_Top:u_AW_Channel_Controller_Top|     ; 2 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|AW_Channel_Controller_Top:u_AW_Channel_Controller_Top                                                        ; work         ;
@@ -351,19 +351,19 @@ applicable agreement for further details.
 ;       |BR_Channel_Controller_Top:u_BR_Channel_Controller_Top|     ; 2 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|BR_Channel_Controller_Top:u_BR_Channel_Controller_Top                                                        ; work         ;
 ;          |WR_HandShake:u_WR_HandShake|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|BR_Channel_Controller_Top:u_BR_Channel_Controller_Top|WR_HandShake:u_WR_HandShake                            ; work         ;
 ;          |Write_Resp_Channel_Arb:u_Write_Resp_Channel_Arb|        ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|BR_Channel_Controller_Top:u_BR_Channel_Controller_Top|Write_Resp_Channel_Arb:u_Write_Resp_Channel_Arb        ; work         ;
-;       |Controller:Read_controller|                                ; 46 (46)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|Controller:Read_controller                                                                                   ; work         ;
+;       |Controller:Read_controller|                                ; 47 (47)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|Controller:Read_controller                                                                                   ; work         ;
 ;       |Mux_2x1:mux_m_addr|                                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|Mux_2x1:mux_m_addr                                                                                           ; work         ;
 ;       |Mux_4x1:rvalid_mux_M0|                                     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|Mux_4x1:rvalid_mux_M0                                                                                        ; work         ;
 ;       |Mux_4x1:rvalid_mux_M1|                                     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|Mux_4x1:rvalid_mux_M1                                                                                        ; work         ;
-;       |WD_Channel_Controller_Top:u_WD_Channel_Controller_Top|     ; 7 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|WD_Channel_Controller_Top:u_WD_Channel_Controller_Top                                                        ; work         ;
+;       |WD_Channel_Controller_Top:u_WD_Channel_Controller_Top|     ; 6 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|WD_Channel_Controller_Top:u_WD_Channel_Controller_Top                                                        ; work         ;
 ;          |Queue:u_Queue|                                          ; 5 (5)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|WD_Channel_Controller_Top:u_WD_Channel_Controller_Top|Queue:u_Queue                                          ; work         ;
-;          |WD_HandShake:u_WD_HandShake|                            ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|WD_Channel_Controller_Top:u_WD_Channel_Controller_Top|WD_HandShake:u_WD_HandShake                            ; work         ;
+;          |WD_HandShake:u_WD_HandShake|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|WD_Channel_Controller_Top:u_WD_Channel_Controller_Top|WD_HandShake:u_WD_HandShake                            ; work         ;
 ;    |CPU_ALU_Master:u_master0|                                     ; 378 (38)          ; 160 (31)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|CPU_ALU_Master:u_master0                                                                                                                          ; work         ;
 ;       |ALU_Core:u_alu|                                            ; 92 (92)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|CPU_ALU_Master:u_master0|ALU_Core:u_alu                                                                                                           ; work         ;
 ;       |CPU_Controller:u_controller|                               ; 248 (248)         ; 129 (129)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|CPU_ALU_Master:u_master0|CPU_Controller:u_controller                                                                                              ; work         ;
 ;    |CPU_ALU_Master:u_master1|                                     ; 73 (13)           ; 48 (9)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|CPU_ALU_Master:u_master1                                                                                                                          ; work         ;
 ;       |CPU_Controller:u_controller|                               ; 60 (60)           ; 39 (39)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|CPU_ALU_Master:u_master1|CPU_Controller:u_controller                                                                                              ; work         ;
-;    |Simple_Memory_Slave:u_slave0|                                 ; 68 (68)           ; 69 (69)      ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|Simple_Memory_Slave:u_slave0                                                                                                                      ; work         ;
+;    |Simple_Memory_Slave:u_slave0|                                 ; 71 (71)           ; 70 (70)      ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|Simple_Memory_Slave:u_slave0                                                                                                                      ; work         ;
 ;       |altsyncram:memory_rtl_0|                                   ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|Simple_Memory_Slave:u_slave0|altsyncram:memory_rtl_0                                                                                              ; work         ;
 ;          |altsyncram_uqp1:auto_generated|                         ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|Simple_Memory_Slave:u_slave0|altsyncram:memory_rtl_0|altsyncram_uqp1:auto_generated                                                               ; work         ;
 ;    |Simple_Memory_Slave:u_slave1|                                 ; 6 (6)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_master_system|Simple_Memory_Slave:u_slave1                                                                                                                      ; work         ;
@@ -507,6 +507,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------+
 ; Register name                                                                                                                                                ; Reason for Removal                                                ;
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------+
+; Simple_Memory_Slave:u_slave3|S_AXI_awready                                                                                                                   ; Lost fanout                                                       ;
+; Simple_Memory_Slave:u_slave3|S_AXI_wready                                                                                                                    ; Lost fanout                                                       ;
+; Simple_Memory_Slave:u_slave2|S_AXI_awready                                                                                                                   ; Lost fanout                                                       ;
+; Simple_Memory_Slave:u_slave2|S_AXI_wready                                                                                                                    ; Lost fanout                                                       ;
 ; CPU_ALU_Master:u_master1|M_AXI_awqos[0..3]                                                                                                                   ; Stuck at GND due to stuck port data_in                            ;
 ; CPU_ALU_Master:u_master1|M_AXI_arqos[0..3]                                                                                                                   ; Stuck at GND due to stuck port data_in                            ;
 ; CPU_ALU_Master:u_master1|CPU_Controller:u_controller|pc[0,1]                                                                                                 ; Stuck at GND due to stuck port data_in                            ;
@@ -544,16 +548,15 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Simple_Memory_Slave:u_slave0|S_AXI_rlast                                                                                                                     ; Merged with Simple_Memory_Slave:u_slave0|S_AXI_rvalid             ;
 ; CPU_ALU_Master:u_master0|M_AXI_wvalid                                                                                                                        ; Merged with CPU_ALU_Master:u_master0|M_AXI_wlast                  ;
 ; CPU_ALU_Master:u_master0|M_AXI_wstrb[3]                                                                                                                      ; Merged with CPU_ALU_Master:u_master0|M_AXI_wstrb[1]               ;
-; CPU_ALU_Master:u_master0|M_AXI_awaddr[30]                                                                                                                    ; Merged with CPU_ALU_Master:u_master0|M_AXI_awaddr[8]              ;
 ; CPU_ALU_Master:u_master0|M_AXI_awaddr[31]                                                                                                                    ; Merged with CPU_ALU_Master:u_master0|M_AXI_awaddr[9]              ;
 ; CPU_ALU_Master:u_master0|M_AXI_wstrb[2]                                                                                                                      ; Merged with CPU_ALU_Master:u_master0|M_AXI_wstrb[0]               ;
+; CPU_ALU_Master:u_master0|M_AXI_awaddr[30]                                                                                                                    ; Merged with CPU_ALU_Master:u_master0|M_AXI_awaddr[8]              ;
 ; Simple_Memory_Slave:u_slave1|write_addr[9]                                                                                                                   ; Merged with Simple_Memory_Slave:u_slave1|write_addr[8]            ;
 ; Simple_Memory_Slave:u_slave0|write_addr[9]                                                                                                                   ; Merged with Simple_Memory_Slave:u_slave0|write_addr[8]            ;
 ; CPU_ALU_Master:u_master0|M_AXI_wstrb[1]                                                                                                                      ; Merged with CPU_ALU_Master:u_master0|M_AXI_wstrb[0]               ;
 ; CPU_ALU_Master:u_master0|M_AXI_awaddr[9]                                                                                                                     ; Merged with CPU_ALU_Master:u_master0|M_AXI_awaddr[8]              ;
 ; CPU_ALU_Master:u_master0|M_AXI_awaddr[8]                                                                                                                     ; Stuck at GND due to stuck port data_in                            ;
 ; AXI_Interconnect_Full:u_interconnect|WD_Channel_Controller_Top:u_WD_Channel_Controller_Top|Queue:u_Queue2|Write_Pointer[0,1]                                 ; Stuck at GND due to stuck port clock_enable                       ;
-; Simple_Memory_Slave:u_slave1|S_AXI_awready                                                                                                                   ; Stuck at GND due to stuck port data_in                            ;
 ; Simple_Memory_Slave:u_slave1|write_addr_received                                                                                                             ; Stuck at GND due to stuck port data_in                            ;
 ; Simple_Memory_Slave:u_slave1|write_addr[2..8]                                                                                                                ; Stuck at GND due to stuck port data_in                            ;
 ; Simple_Memory_Slave:u_slave0|write_addr[8]                                                                                                                   ; Stuck at GND due to stuck port data_in                            ;
@@ -563,6 +566,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Simple_Memory_Slave:u_slave1|write_data_received                                                                                                             ; Stuck at GND due to stuck port data_in                            ;
 ; Simple_Memory_Slave:u_slave1|S_AXI_bvalid                                                                                                                    ; Stuck at GND due to stuck port data_in                            ;
 ; AXI_Interconnect_Full:u_interconnect|BR_Channel_Controller_Top:u_BR_Channel_Controller_Top|Write_Resp_Channel_Arb:u_Write_Resp_Channel_Arb|Selected_Slave[0] ; Stuck at GND due to stuck port data_in                            ;
+; Simple_Memory_Slave:u_slave1|S_AXI_awready                                                                                                                   ; Stuck at VCC due to stuck port data_in                            ;
 ; AXI_Interconnect_Full:u_interconnect|WD_Channel_Controller_Top:u_WD_Channel_Controller_Top|Queue:u_Queue2|Pulse                                              ; Stuck at GND due to stuck port data_in                            ;
 ; AXI_Interconnect_Full:u_interconnect|BR_Channel_Controller_Top:u_BR_Channel_Controller_Top|Write_Resp_Channel_Arb:u_Write_Resp_Channel_Arb|Sel_Resp_ID[0]    ; Stuck at GND due to stuck port data_in                            ;
 ; CPU_ALU_Master:u_master1|CPU_Controller:u_controller|pc[2..31]                                                                                               ; Stuck at GND due to stuck port data_in                            ;
@@ -724,7 +728,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Simple_Memory_Slave:u_slave0|memory_rtl_0_bypass[12]                                                                                                         ; Merged with Simple_Memory_Slave:u_slave0|read_addr[7]             ;
 ; Simple_Memory_Slave:u_slave0|memory_rtl_0_bypass[14]                                                                                                         ; Merged with Simple_Memory_Slave:u_slave0|read_addr[8]             ;
 ; Simple_Memory_Slave:u_slave0|memory_rtl_0_bypass[16]                                                                                                         ; Merged with Simple_Memory_Slave:u_slave0|read_addr[9]             ;
-; Simple_Memory_Slave:u_slave0|memory_rtl_0_bypass[0,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,99,102,105,108,111]      ; Merged with Simple_Memory_Slave:u_slave0|S_AXI_wready             ;
+; Simple_Memory_Slave:u_slave0|memory_rtl_0_bypass[18,21,24,27,30,33,36,39,42,45,48,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,99,102,105,108,111]        ; Merged with Simple_Memory_Slave:u_slave0|memory_rtl_0_bypass[0]   ;
 ; AXI_Interconnect_Full:u_interconnect|Controller:Read_controller|curr_state_slave2~4                                                                          ; Lost fanout                                                       ;
 ; AXI_Interconnect_Full:u_interconnect|Controller:Read_controller|curr_state_slave2~5                                                                          ; Lost fanout                                                       ;
 ; AXI_Interconnect_Full:u_interconnect|Controller:Read_controller|curr_state_slave~4                                                                           ; Lost fanout                                                       ;
@@ -738,7 +742,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; AXI_Interconnect_Full:u_interconnect|Controller:Read_controller|curr_state_address.M0_Address                                                                ; Lost fanout                                                       ;
 ; AXI_Interconnect_Full:u_interconnect|Controller:Read_controller|curr_state_address.M1_Address                                                                ; Lost fanout                                                       ;
 ; AXI_Interconnect_Full:u_interconnect|Controller:Read_controller|curr_state_address.Idle_address                                                              ; Lost fanout                                                       ;
-; Total Number of Removed Registers = 541                                                                                                                      ;                                                                   ;
+; Total Number of Removed Registers = 544                                                                                                                      ;                                                                   ;
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------+
 
 
@@ -862,10 +866,16 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ;                                                                                                                            ; due to stuck port data_in      ; CPU_ALU_Master:u_master0|CPU_Controller:u_controller|src_addr2[1],                                                                                            ;
 ;                                                                                                                            ;                                ; CPU_ALU_Master:u_master0|CPU_Controller:u_controller|instruction[17],                                                                                         ;
 ;                                                                                                                            ;                                ; CPU_ALU_Master:u_master0|CPU_Controller:u_controller|instruction[9]                                                                                           ;
+; Simple_Memory_Slave:u_slave3|S_AXI_awready                                                                                 ; Lost Fanouts                   ; Simple_Memory_Slave:u_slave3|write_addr_received,                                                                                                             ;
+;                                                                                                                            ;                                ; Simple_Memory_Slave:u_slave3|write_data_received,                                                                                                             ;
+;                                                                                                                            ;                                ; Simple_Memory_Slave:u_slave3|S_AXI_bvalid                                                                                                                     ;
+; Simple_Memory_Slave:u_slave2|S_AXI_awready                                                                                 ; Lost Fanouts                   ; Simple_Memory_Slave:u_slave2|write_addr_received,                                                                                                             ;
+;                                                                                                                            ;                                ; Simple_Memory_Slave:u_slave2|write_data_received,                                                                                                             ;
+;                                                                                                                            ;                                ; Simple_Memory_Slave:u_slave2|S_AXI_bvalid                                                                                                                     ;
+; Simple_Memory_Slave:u_slave1|write_addr_received                                                                           ; Stuck at GND                   ; Simple_Memory_Slave:u_slave1|S_AXI_wready,                                                                                                                    ;
+;                                                                                                                            ; due to stuck port data_in      ; Simple_Memory_Slave:u_slave1|S_AXI_awready                                                                                                                    ;
 ; AXI_Interconnect_Full:u_interconnect|WD_Channel_Controller_Top:u_WD_Channel_Controller_Top|Queue:u_Queue2|Write_Pointer[1] ; Stuck at GND                   ; Simple_Memory_Slave:u_slave1|write_data_received                                                                                                              ;
 ;                                                                                                                            ; due to stuck port clock_enable ;                                                                                                                                                               ;
-; Simple_Memory_Slave:u_slave1|write_addr_received                                                                           ; Stuck at GND                   ; Simple_Memory_Slave:u_slave1|S_AXI_wready                                                                                                                     ;
-;                                                                                                                            ; due to stuck port data_in      ;                                                                                                                                                               ;
 +----------------------------------------------------------------------------------------------------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -874,9 +884,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 310   ;
-; Number of registers using Synchronous Clear  ; 91    ;
-; Number of registers using Synchronous Load   ; 4     ;
+; Total registers                              ; 311   ;
+; Number of registers using Synchronous Clear  ; 92    ;
+; Number of registers using Synchronous Load   ; 9     ;
 ; Number of registers using Asynchronous Clear ; 24    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 222   ;
@@ -1023,26 +1033,26 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------+
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master1|CPU_Controller:u_controller|src_addr1[4]                  ;
-; 3:1                ; 22 bits   ; 44 LEs        ; 22 LEs               ; 22 LEs                 ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|CPU_Controller:u_controller|opcode[1]                     ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|M_AXI_araddr[4]                                           ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master1|CPU_Controller:u_controller|src_addr1[7]                  ;
+; 3:1                ; 22 bits   ; 44 LEs        ; 22 LEs               ; 22 LEs                 ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|CPU_Controller:u_controller|src_addr1[2]                  ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|M_AXI_araddr[2]                                           ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master1|M_AXI_araddr[4]                                           ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|M_AXI_awaddr[5]                                           ;
-; 3:1                ; 22 bits   ; 44 LEs        ; 22 LEs               ; 22 LEs                 ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|CPU_Controller:u_controller|instruction[13]               ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |alu_master_system|Simple_Memory_Slave:u_slave0|write_addr[4]                                         ;
-; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|CPU_Controller:u_controller|pc[7]                         ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|M_AXI_wdata[1]                                            ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|CPU_Controller:u_controller|operand2[3]                   ;
-; 3:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|CPU_Controller:u_controller|operand1[5]                   ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master1|CPU_Controller:u_controller|instruction[21]               ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|CPU_Controller:u_controller|operand1[17]                  ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|M_AXI_awaddr[6]                                           ;
+; 3:1                ; 22 bits   ; 44 LEs        ; 22 LEs               ; 22 LEs                 ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|CPU_Controller:u_controller|instruction[6]                ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |alu_master_system|Simple_Memory_Slave:u_slave0|write_addr[2]                                         ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|CPU_Controller:u_controller|pc[16]                        ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|M_AXI_wdata[7]                                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|CPU_Controller:u_controller|operand2[4]                   ;
+; 3:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|CPU_Controller:u_controller|operand1[3]                   ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master1|CPU_Controller:u_controller|instruction[11]               ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|CPU_Controller:u_controller|operand1[8]                   ;
 ; 29:1               ; 2 bits    ; 38 LEs        ; 20 LEs               ; 18 LEs                 ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|CPU_Controller:u_controller|result[5]                     ;
 ; 29:1               ; 2 bits    ; 38 LEs        ; 20 LEs               ; 18 LEs                 ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|CPU_Controller:u_controller|result[3]                     ;
 ; 30:1               ; 2 bits    ; 40 LEs        ; 22 LEs               ; 18 LEs                 ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|CPU_Controller:u_controller|result[7]                     ;
-; 30:1               ; 2 bits    ; 40 LEs        ; 22 LEs               ; 18 LEs                 ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|CPU_Controller:u_controller|result[0]                     ;
+; 30:1               ; 2 bits    ; 40 LEs        ; 22 LEs               ; 18 LEs                 ; Yes        ; |alu_master_system|CPU_ALU_Master:u_master0|CPU_Controller:u_controller|result[1]                     ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |alu_master_system|Simple_Memory_Slave:u_slave0|read_addr                                             ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |alu_master_system|CPU_ALU_Master:u_master1|CPU_Controller:u_controller|Selector9                     ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |alu_master_system|CPU_ALU_Master:u_master0|CPU_Controller:u_controller|Selector9                     ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |alu_master_system|CPU_ALU_Master:u_master1|CPU_Controller:u_controller|Selector11                    ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |alu_master_system|CPU_ALU_Master:u_master0|CPU_Controller:u_controller|Selector11                    ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|Controller:Read_controller|next_state_address ;
 ; 9:1                ; 4 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; No         ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|Controller:Read_controller|next_state_slave   ;
 ; 9:1                ; 4 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; No         ; |alu_master_system|AXI_Interconnect_Full:u_interconnect|Controller:Read_controller|next_state_slave2  ;
@@ -2128,7 +2138,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -2138,7 +2148,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Nov 11 09:39:40 2025
+    Info: Processing started: Tue Nov 11 11:35:54 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AXI_PROJECT -c AXI_PROJECT
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file /users/nguyen ha hai/axi4-system-suite/src/wrapper/alu_master_system.v
@@ -2814,19 +2824,19 @@ Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "master1_done" is stuck at GND
-Info (17049): 216 registers lost all their fanouts during netlist optimizations.
+Info (17049): 220 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/Nguyen Ha Hai/axi4-system-suite/sim/quartus/output_files/AXI_PROJECT.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 745 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 747 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 705 logic cells
+    Info (21061): Implemented 707 logic cells
     Info (21064): Implemented 32 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 123 warnings
-    Info: Peak virtual memory: 4641 megabytes
-    Info: Processing ended: Tue Nov 11 09:39:50 2025
-    Info: Elapsed time: 00:00:10
+    Info: Peak virtual memory: 4640 megabytes
+    Info: Processing ended: Tue Nov 11 11:36:06 2025
+    Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:07
 
 
