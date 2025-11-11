@@ -102,19 +102,23 @@ module Simple_Memory_Slave #(
     // ========================================================================
     always @(posedge ACLK) begin
         if (!ARESETN) begin
-            S_AXI_awready <= 1'b0;
+            S_AXI_awready <= 1'b1;  // Ready to accept address after reset
             write_addr <= 32'h0;
             write_len <= 8'h0;
             write_addr_received <= 1'b0;
         end else begin
-            if (S_AXI_awvalid && !write_addr_received) begin
-                S_AXI_awready <= 1'b1;
+            if (S_AXI_awvalid && S_AXI_awready) begin
+                // Handshake complete, latch address and deassert awready
                 write_addr <= S_AXI_awaddr;
                 write_len <= S_AXI_awlen;
                 write_addr_received <= 1'b1;
+                S_AXI_awready <= 1'b0;  // Not ready until current transaction completes
+            end else if (!write_addr_received && !write_data_received) begin
+                // Ready to accept new address when no transaction in progress
+                S_AXI_awready <= 1'b1;
             end else if (write_addr_received && write_data_received && S_AXI_bready && S_AXI_bvalid) begin
                 // Reset after write response is accepted
-                S_AXI_awready <= 1'b0;
+                S_AXI_awready <= 1'b1;  // Ready for next transaction
                 write_addr_received <= 1'b0;
             end else begin
                 S_AXI_awready <= 1'b0;
@@ -131,9 +135,8 @@ module Simple_Memory_Slave #(
             write_data_received <= 1'b0;
             write_count <= 8'h0;
         end else begin
-            if (S_AXI_wvalid && write_addr_received && !write_data_received) begin
-                S_AXI_wready <= 1'b1;
-                // Write data to memory
+            if (S_AXI_wvalid && S_AXI_wready && write_addr_received && !write_data_received) begin
+                // Handshake complete, write data to memory
                 if (write_word_addr < MEM_SIZE) begin
                     if (S_AXI_wstrb[0]) memory[write_word_addr][7:0]   <= S_AXI_wdata[7:0];
                     if (S_AXI_wstrb[1]) memory[write_word_addr][15:8]  <= S_AXI_wdata[15:8];
@@ -144,7 +147,11 @@ module Simple_Memory_Slave #(
                 if (S_AXI_wlast) begin
                     write_data_received <= 1'b1;
                     write_count <= 8'h0;
+                    S_AXI_wready <= 1'b0;  // Deassert after last data
                 end
+            end else if (write_addr_received && !write_data_received) begin
+                // Ready to accept write data when address is received
+                S_AXI_wready <= 1'b1;
             end else if (write_data_received && S_AXI_bready && S_AXI_bvalid) begin
                 // Reset after write response is accepted
                 S_AXI_wready <= 1'b0;
